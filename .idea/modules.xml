@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PickerAndroid/PickerAndroid.iml" filepath="$PROJECT_DIR$/PickerAndroid/PickerAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PickerDefault/PickerDefault.iml" filepath="$PROJECT_DIR$/PickerDefault/PickerDefault.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PickerLib/PickerLib.iml" filepath="$PROJECT_DIR$/PickerLib/PickerLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/build/build.iml" filepath="$PROJECT_DIR$/build/build.iml" />
+    </modules>
+  </component>
+</project>

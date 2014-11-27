@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FlashRuntimeExtensions">
+    <CLASSES>
+      <root url="jar://C:/SDK/flex_4.12.1/lib/android/FlashRuntimeExtensions.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

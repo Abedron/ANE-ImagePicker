@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Test">
+    <configurations>
+      <configuration name="Test" target-platform="Mobile" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/Test">
+        <dependencies target-player="12.0">
+          <entries>
+            <entry library-id="d57c6f18-3f38-4894-bbd1-4e05dd15cbf4">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="flex_4.13.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/Main-android-descriptor.xml" package-file-name="Main" />
+        <packaging-ios package-file-name="Main" />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="flex_4.13.0" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="MinimalComps v0.9.10" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="d57c6f18-3f38-4894-bbd1-4e05dd15cbf4" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../build/ImagePicker.ane!/" />
+          <root url="file://$MODULE_DIR$/libs/minimalcomps-v0.9.10/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="Minimalcomps v0.9.10" level="application" />
+  </component>
+</module>

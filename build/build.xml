@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="ANE-build" default="build">
+
+    <!--
+        Change value for you SDK
+    -->
+    <property name="SDK_HOME" value="c:\SDK\flex_4.13.0"/>
+
+
+
+
+
+
+
+    <property name="ADT" value="${SDK_HOME}/lib/adt.jar"/>
+
+    <target name="build">
+
+        <copy file="../PickerLib/out/production/PickerLib/PickerLib.swc" todir="" overwrite="true"/>
+
+        <unzip src="../PickerLib/out/production/PickerLib/PickerLib.swc" dest="temp/swc" overwrite="true"/>
+        <copy file="temp/swc/library.swf" todir="android" overwrite="true"/>
+        <delete dir="temp"/>
+
+        <unzip src="../PickerDefault/out/production/PickerDefault/PickerDefault.swc" dest="temp/swc" overwrite="true"/>
+        <copy file="temp/swc/library.swf" todir="default" overwrite="true"/>
+        <delete dir="temp"/>
+
+        <java jar="${ADT}" fork="true" failonerror="true">
+            <arg value="-package"/>
+            <arg value="-target"/>
+            <arg value="ane"/>
+            <arg value="ImagePicker.ane"/>
+            <arg value="extension.xml"/>
+
+            <arg value="-swc"/>
+            <arg value="PickerLib.swc"/>
+
+            <arg line="-platform Android-ARM -C android ."/>
+            <arg line="-platform default -C default/ ."/>
+        </java>
+
+    </target>
+
+</project>
